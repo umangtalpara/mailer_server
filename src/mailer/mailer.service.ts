@@ -31,7 +31,8 @@ export class MailerService {
       const res = await transporter.sendMail(mailOptions);
       console.log('email sent successfully!', res);
     } catch (error) {
-      console.error('Error sending OTP email:', error);
+      console.error('Error sending  email:', error);
+      throw ('Error sending  email')
     }
   }
 }
