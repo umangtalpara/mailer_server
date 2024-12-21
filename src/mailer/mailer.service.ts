@@ -29,7 +29,7 @@ export class MailerService {
       });
 
       const res = await transporter.sendMail(mailOptions);
-      console.log('OTP email sent successfully!', res);
+      console.log('email sent successfully!', res);
     } catch (error) {
       console.error('Error sending OTP email:', error);
     }
